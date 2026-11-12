@@ -1,0 +1,227 @@
+/* =========================================================================
+   TRABALHO DE CSS — ESTILIZAÇÃO ENXUTA DO RPG DE TURNOS
+   Preencha as cores no :root e os valores em branco (: ;) nas classes abaixo!
+   ========================================================================= */
+
+/* 1. Paleta de cores principal do seu jogo (já aplicada nos elementos abaixo!) */
+:root {
+    --cor-fundo:#000000 ;
+    --cor-painel:#301934 ;
+    --cor-borda:#7F00FF ;
+    --cor-destaque:#191970 ;
+    --cor-heroi:#005A87 ;
+    --cor-inimigo:#5C1010 ;
+    --cor-texto:#696969 ;
+}
+
+/* 2. Reset geral de margens e espaçamentos de todos os elementos */
+* {
+    box-sizing: ;
+    margin: ;
+    padding: ;
+}
+
+/* 3. Estilo geral do corpo da página (<body>) */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: ;
+    padding: ;
+}
+
+/* 4. Caixa central (.container) e Cabeçalho do jogo (.topo) */
+.container {
+    max-width: ;
+    margin: ;
+}
+
+.topo {
+    text-align: ;
+    margin-bottom: ;
+}
+
+.topo h1 {
+    color: var(--cor-destaque);
+    font-size: ;
+    margin-bottom: ;
+}
+
+/* 5. Caixa genérica (.painel) usada na Lore, Avisos de Turno, Ações e Histórico */
+.painel {
+    background-color: var(--cor-painel);
+    border: ;
+    border-color: var(--cor-borda);
+    border-left-width: ;
+    border-left-color: var(--cor-destaque);
+    border-radius: ;
+    padding: ;
+    margin-bottom: ;
+}
+
+/* 6. Grades de organização: Galeria/Estatísticas (3 colunas) e Botões (2 colunas) */
+.grid-3 {
+    display: ;
+    grid-template-columns: ;
+    gap: ;
+    margin-bottom: ;
+}
+
+.grid-2 {
+    display: ;
+    grid-template-columns: ;
+    gap: ;
+}
+
+/* 7. Arena de Batalha (.arena): posiciona Herói e Oponente lado a lado */
+.arena {
+    display: ;
+    justify-content: ;
+    align-items: ;
+    gap: ;
+    margin-bottom: ;
+}
+
+.versus {
+    font-size: ;
+    font-weight: ;
+    color: var(--cor-destaque);
+}
+
+/* 8. Cartão base (.card) usado nos Campeões da Galeria e nos Lutadores da Arena */
+.card {
+    flex: ;
+    background-color: var(--cor-painel);
+    border: ;
+    border-color: var(--cor-borda);
+    border-radius: ;
+    padding: ;
+    text-align: ;
+}
+
+/* Cor da borda exclusiva do card do seu Herói */
+.card.heroi {
+    border-color: var(--cor-heroi);
+}
+
+/* Cor da borda exclusiva do card do Oponente */
+.card.inimigo {
+    border-color: var(--cor-inimigo);
+}
+
+/* 9. Etiqueta de Classe/Elemento (.tag) e Faixa de Atributos HP/ATK/DEF (.atributos) */
+.tag {
+    display: ;
+    background-color: var(--cor-borda);
+    color: var(--cor-texto);
+    padding: ;
+    border-radius: ;
+    font-size: ;
+    font-weight: ;
+    margin-bottom: ;
+}
+
+.atributos {
+    display: ;
+    justify-content: ;
+    flex-wrap: ;
+    gap: ;
+    background-color: var(--cor-fundo);
+    padding: ;
+    border-radius: ;
+    margin: ;
+}
+
+/* 10. Imagem do Sprite do Personagem (.sprite) e espelhamento do Oponente (.espelhar) */
+.sprite {
+    width: ;
+    height: ;
+    object-fit: ;
+    border-radius: ;
+    border: ;
+    border-color: var(--cor-borda);
+    margin: ;
+}
+
+.espelhar {
+    transform: ;
+}
+
+/* 11. Barra de Pontos de Vida (.barra-fundo e .barra-hp) */
+.barra-fundo {
+    width: ;
+    height: ;
+    background-color: var(--cor-fundo);
+    border-radius: ;
+    overflow: ;
+    margin: ;
+}
+
+.barra-hp {
+    height: ;
+    background-color: ;
+    transition: ;
+}
+
+.barra-hp.inimigo-bar {
+    background-color: ;
+}
+
+/* 12. Estilo geral dos Botões (.btn) e cores individuais dos 4 ataques */
+.btn {
+    display: ;
+    width: ;
+    padding: ;
+    border: ;
+    border-radius: ;
+    background-color: var(--cor-heroi);
+    color: var(--cor-texto);
+    font-weight: ;
+    text-align: ;
+    text-decoration: ;
+    cursor: ;
+}
+
+.btn:hover {
+    filter: ;
+}
+
+.btn-basico {
+    background-color: ;
+}
+
+.btn-carregado {
+    background-color: ;
+}
+
+.btn-habilidade {
+    background-color: ;
+}
+
+.btn-item {
+    background-color: ;
+}
+
+/* 13. Campos de formulário (input/select/textarea) e Tabela de Histórico (.tabela) */
+input, select, textarea {
+    width: ;
+    padding: ;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border: ;
+    border-color: var(--cor-borda);
+    border-radius: ;
+    margin-bottom: ;
+}
+
+.tabela {
+    width: ;
+    border-collapse: ;
+    margin-top: ;
+}
+
+.tabela th, .tabela td {
+    padding: ;
+    border-bottom: ;
+    border-bottom-color: var(--cor-borda);
+    text-align: ;
+}
